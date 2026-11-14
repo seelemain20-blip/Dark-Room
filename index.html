@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <link rel="stylesheet" href="activity.css">
+    <link rel="preload" as="image" href="images/off.png">
+    <link rel="preload" as="image" href="images/on.png">
+</head>
+<body>
+    <div class="bg-bulb">
+        <!-- Scene gets the jolt/shake; stage gets the slow breathing zoom -->
+        <div class="scene">
+            <div class="stage">
+                <img id="img_off" src="images/off.png" class="bulb_off" alt="Dark room, monitor off" draggable="false">
+                <img id="img_on" src="images/on.png" class="bulb_on" alt="" aria-hidden="true" draggable="false">
+
+                <button class="red-button" id="redButton" type="button"
+                        aria-pressed="false" aria-label="Red button: toggle the lights"></button>
+            </div>
+        </div>
+
+        <div class="vignette"></div>
+        <div class="flash"></div>
+    </div>
+
+    <script src="activity.js"></script>
+</body>
+</html>
